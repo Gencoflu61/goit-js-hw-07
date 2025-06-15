@@ -15,7 +15,6 @@ const images = [
 
 // Galeri container'ını seçiyoruz
 const gallery = document.querySelector('.gallery');
-
 // Galeri için temel CSS stilini ekliyoruz
 const style = document.createElement('style');
 style.textContent = `
@@ -46,7 +45,8 @@ const galleryItems = images.map(image => {
       <img src="${image.url}" alt="${image.alt}">
     </li>
   `;
+ 
 });
-
+  
 // Tüm öğeleri tek seferde galeriye ekliyoruz
 gallery.insertAdjacentHTML('beforeend', galleryItems.join(''));
