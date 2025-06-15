@@ -1,8 +1,9 @@
+document.addEventListener('DOMContentLoaded', function() {
 // 1. Kategoriler listesini seçiyoruz
 const categoriesList = document.getElementById('categories');
 // 2. Kategori sayısını bulup ekrana yazdırıyoruz
 const categoryItems = categoriesList.querySelectorAll('.item');
-console.log(`Toplam kategori sayisi: ${categoryItems.lenght}`);
+console.log(`Toplam kategori sayisi: ${categoryItems.length}`);
 // 3. Her bir kategori için işlem yapıyoruz
 categoryItems.forEach(item => {
    // a) Kategori başlığını alıyoruz (h2 etiketi)
@@ -14,4 +15,5 @@ categoryItems.forEach(item => {
     console.log(`Kategori: ${categoryTitle}`);
     console.log(`Öğe sayisi: ${elementCount}`);
 
+});
 });
