@@ -15,7 +15,7 @@ const images = [
 
 // Galeri container'ını seçiyoruz
 const gallery = document.querySelector('.gallery');
-// Galeri için temel CSS stilini ekliyoruz
+// Galeri için temel CSS stilini ekliyoruz/
 const style = document.createElement('style');
 style.textContent = `
   .gallery {
