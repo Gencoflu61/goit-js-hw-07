@@ -14,30 +14,7 @@ const images = [
 ];
 
 // Galeri container'ını seçiyoruz
-const gallery = document.querySelector('.gallery');
-// Galeri için temel CSS stilini ekliyoruz/
-const style = document.createElement('style');
-style.textContent = `
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-  }
-  .gallery li {
-    flex: 1 1 300px;
-  }
-  .gallery img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-`;
-document.head.appendChild(style);
-
+const gallery = document.querySelector(".gallery");
 // Her resim için bir galeri öğesi oluşturuyoruz
 const galleryItems = images.map(image => {
   return `
