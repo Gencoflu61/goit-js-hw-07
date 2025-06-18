@@ -1,7 +1,8 @@
-const form = document.querySelector('.login-form');
-form.addEventListener('submit', function(event) {
-    //Sayfanın yeniden yüklenmesini engeller
+const form = document.querySelector(".login-form");
+
+form.addEventListener("submit", (event)=> {
     event.preventDefault();
+    
     const email = form.querySelector('input[name="email"]').value.trim();
     const password = form.querySelector('input[name="password"]').value.trim();
     
@@ -14,8 +15,7 @@ form.addEventListener('submit', function(event) {
         password : password,
     }
     
-    //Form verilerini konsola yazdır
     console.log(formData);
-    //Formu temizle
-    this.reset();
+
+    form.reset();
 });
