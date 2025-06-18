@@ -1,4 +1,5 @@
-const form = document.querySelector('.login-form').addEventListener('submit', function(event) {
+const form = document.querySelector('.login-form');
+form.addEventListener('submit', function(event) {
     //Sayfanın yeniden yüklenmesini engeller
     event.preventDefault();
     const email = form.querySelector('input[name="email"]').value.trim();
